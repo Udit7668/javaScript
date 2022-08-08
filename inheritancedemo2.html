@@ -1,0 +1,32 @@
+<script>
+
+    function Parent(){
+
+    }
+    Parent.prototype.fun_one=function(){
+        return "This is Parent class Function"
+    }
+
+    function Child(){
+
+    }
+    Child.prototype=Object.create(Parent.prototype);
+    Child.prototype.fun_two=function(){
+        return "This is Child class Function";
+    }
+
+    function SubChild(){
+
+    }
+
+    SubChild.prototype=Object.create(Child.prototype);
+    SubChild.prototype.fun_three=function(){
+        return "This is subchild function";
+    }
+
+    let obj=new SubChild();
+
+    console.log(obj.fun_one());
+    console.log(obj.fun_two());
+    console.log(obj.fun_three());
+</script>

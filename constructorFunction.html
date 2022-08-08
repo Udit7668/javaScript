@@ -1,0 +1,133 @@
+<!--
+Constructor Function----
+--------------------------------------------------
+In JavaScript we need to create class for constructor concept
+
+class is collection of variables and methods
+
+by using constructor function we can intialise/create an object
+
+this=> in constructor all memebres sholud start with "this"
+
+we can create object using "new" keyword in javascript
+
+suppose we have one class in javascript and we want to add some properties to class the we use "prototype";
+
+
+
+-->
+
+<!-- <script>
+     function class_one(){
+        this.var_one="Hi";
+        this.var_two="Hello";
+     }
+
+     let obj=new class_one();
+
+     console.log(obj.var_one,obj.var_two);
+</script> -->
+
+<!-- <script>
+     function class_one(arg1,arg2,arg3){
+        this.var_one=arg1;
+        this.var_two=arg2;
+        this.var_three=arg3;
+
+     }
+
+     let obj1=new class_one("Angular","Nodejs","Reactjs");
+     console.log(obj1.var_one,obj1.var_two,obj1.var_three);
+      
+      var obj2=new class_one("Java","Python","javascript");
+      console.log(obj2.var_one,obj2.var_two,obj2.var_three);
+      console.log(obj1);
+</script> -->
+
+
+<!-- <script>
+    function class_one(){
+        this.fun_one=function(){
+            return "Hi";
+        }
+        this.fun_two=function(){
+            return "Hello";
+        }
+        this.fun_three=function(){
+         return "Good morning";
+        }
+    }
+
+    let obj=new class_one();
+    console.log(obj.fun_one());
+    console.log(obj.fun_two());
+    console.log(obj.fun_three);
+
+</script> -->
+
+
+<!-- <script>
+       function class_one(){
+        this.var_one="Hello Udit Mishra";
+
+        this.fun_one=function(){
+            return this.var_one;// if we return only var_one then it will error show var_one is not defined
+        }
+       }
+
+       let obj=new class_one();
+       console.log(obj.fun_one());
+
+       console.log(obj.fun_one);
+       console.log(obj.var_one);
+</script> -->
+
+<!-- <script>
+
+function class_one(){
+
+}
+class_one.prototype.var_one="Hello world";
+class_one.prototype.var_two="Hello Udit Mishra";
+let obj=new class_one();
+console.log(obj.var_one);
+console.log(obj.var_two);
+</script> -->
+
+<!-- <script>
+    function class_one(){
+
+    }
+    class_one.prototype.fun_one=function(){
+        return "Hello function";
+    }
+
+    let obj=new class_one();
+    console.log(obj.fun_one());
+    console.log(obj.fun_one);
+
+</script> -->
+
+<!-- <script>
+    function class_one(){
+
+    }
+
+    class_one.prototype.var_one="Hello Udit Mishra";
+    class_one.prototype.fun_one=function(){
+        return "This is function in class_one";
+    }
+    let obj=new class_one();
+    console.log(obj.var_one);
+    console.log(obj.fun_one());
+</script> -->
+
+<script>
+    function class_one(){
+        console.log("Constructor function");
+    }
+    let obj1=new class_one();
+    let obj2=new class_one();
+    let obj3=new class_one();
+
+</script>

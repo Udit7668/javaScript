@@ -1,0 +1,124 @@
+<!--
+
+varg argg method in java===restparameter in javascript
+1.  ...
+2.  last parameter
+3. only one
+4.  [] internally used array
+5. any number of parameter can be given
+
+
+
+1 by using rest parameter we can hold or store more than one value in single parameter
+
+2. we can represent as ...variablename
+
+3 we can have onle one rest parameter/ spread operator in function
+
+4 position of spread operator will be last parameter
+
+5 spread operator will stores values internally in the form of array
+
+
+
+-->
+
+<!-- <script>
+    function fun_one(...args){
+        console.log(args);
+    }
+
+    fun_one();
+</script> -->
+
+<!-- <script>
+    function fun_one(...args){
+        console.log(args);
+    }
+    fun_one("Raja","Rani");
+</script> -->
+
+<!-- <script>
+   function fun_one(...args){
+    console.log(args[0]);
+   }
+   fun_one("Raja","Rani");
+
+</script> -->
+
+
+<!-- <script>
+    function fun_one(...args){
+        console.log(args);
+    }
+    fun_one("Raja","Rani","Ramesh","Sumit","Sumesh");
+
+</script> -->
+
+
+<!-- <script>
+    function fun_one(...args,...arg2){
+
+    }
+</script> -->
+
+<!-- 
+<script>
+    function fun_one(arg1,...args){
+        console.log(args[0]);
+    }
+    fun_one("Raja","Rani","Ramesh","Sumit");
+</script> -->
+
+
+<!-- <script>
+    function fun_one(arg1,...args){
+        console.log(args);
+    }
+    fun_one("Raja","Rani","Sumit","Ramesh");
+</script> -->
+
+<!-- <script>
+    function fun_one(...args){
+        console.log(args);
+    }
+    fun_one(null,null,null);
+</script> -->
+
+<!-- <script>
+    function fun_one(...args){
+        console.log(args);
+    }
+    fun_one(undefined,undefined);
+</script> -->
+
+
+<!-- <script>
+    function fun_one(...args){
+        console.log(args);
+    }
+    fun_one(undefined,null);
+</script> -->
+
+<!-- <script>
+    function fun_one(arg1,...args){
+        console.log(arg1);
+    }
+    fun_one("Raja","Rani","ramesh");
+</script> -->
+
+
+<!-- <script>
+    function fun_one(arg1="Hello",arg2="Raja",...args){
+        console.log(arg1,arg2,args);
+
+    }
+    fun_one();
+</script> -->
+
+<script>
+    function fun_one(arg1="Hello",arg2="Hii",...args){
+        console.log(arg1,arg2,args);
+    }
+    fun_one("Raja","Rani","Ramesh","Sumit")
+</script>

@@ -1,0 +1,61 @@
+<!-- <script>
+    function class_one(){
+
+    }
+     class_one.prototype.var_one="Hello function-1";
+    function class_two(){
+
+    }
+    class_two.prototype.var_two="Hello function-2";
+
+    let obj1=new class_one();
+    let obj2=new class_two();
+
+    console.log(obj1.var_one);
+   // console.log(obj1.var_two);
+   console.log(obj2.var_two);
+</script> -->
+
+<!-- 
+<script>
+    function class_one(){
+
+    }
+    class_one.prototype.var_one="Java";
+    function class_two(){
+
+    }
+    class_two.prototype.var_two="By udit Mishra";
+
+    let obj1=new class_one();
+    let obj2=new class_two();
+
+    console.log(obj2.var_one);
+    console.log(obj2.var_two);
+</script> -->
+
+ <script>
+    function class_one(){
+
+    }
+    class_one.prototype.var_one="Java";
+
+    function class_two(){
+
+    }
+     class_two.prototype=Object.create(class_one.prototype);//here both var_one and var_two is printed
+    class_two.prototype.var_two="By Udit Mishra";
+
+    //class_two.prototype=Object.create(class_one.prototype);// class_two is child of class_one is parentS---- here var_one is printed only
+
+    let obj1=new class_one();
+
+    let obj2=new class_two();
+
+    console.log(obj2.var_one);
+    console.log(obj2.var_two);
+
+    console.log(obj1.var_one);
+    console.log(obj1.var_two);
+
+</script> 
